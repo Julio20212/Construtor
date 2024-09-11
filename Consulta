@@ -1,0 +1,44 @@
+package Construtor;
+
+public class Consulta {
+    private String dentista;
+    private String cliente;
+    private String data;
+
+    public Consulta() {
+        this.data = new String();
+        this.dentista = "Dr.João";
+        this.cliente = "Caio";
+    }
+
+    public Consulta(String data, String dentista, String cliente) {
+        this.data = data;
+        this.dentista = dentista;
+        this.cliente = cliente;
+    }
+
+    public Consulta(String data) {
+        this.data = data;
+        this.dentista = "Desconhecido";
+        this.cliente = "Desconhecido";
+    }
+
+    public String getData() { 
+    	return data; 
+    }
+    public void setData(String data) { 
+    	this.data = data; 
+    }
+    public String getDentista() { 
+    	return dentista; 
+    }
+    public void setDentista(String dentista) { 
+    	this.dentista = dentista; 
+    }
+    public String getCliente() { 
+    	return cliente; 
+    }
+    public void setCliente(String cliente) { 
+    	this.cliente = cliente;
+    }
+}
